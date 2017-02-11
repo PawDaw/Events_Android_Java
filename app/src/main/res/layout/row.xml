@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42c7fb">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:id="@+id/title_row"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:shadowColor="#f2f0f0"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textColorHighlight="#e5e5e5"
+        android:textColor="#fff6f6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:id="@+id/start_row"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="end"
+        android:id="@+id/end_row"
+        android:layout_below="@+id/start_row"
+        android:layout_alignLeft="@+id/start_row"
+        android:layout_alignStart="@+id/start_row"
+        android:layout_marginBottom="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stored in the Database"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:focusable="false"
+        android:editable="false"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_below="@+id/title_row"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Time :"
+        android:id="@+id/textView2"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/title_row"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End   Time :"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/start_row"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
